@@ -25,7 +25,6 @@
 /config/database.yml
 /config/secrets.yml
 
-
 /.drone.yml
 /Dockerfile
 /.framgia-ci-result.temp.yml
