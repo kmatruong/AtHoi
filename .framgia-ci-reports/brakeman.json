@@ -3,9 +3,9 @@
     "app_path": "/home/huatruong/AtHoi",
     "rails_version": "5.1.5",
     "security_warnings": 0,
-    "start_time": "2018-03-01 14:37:40 +0700",
-    "end_time": "2018-03-01 14:37:40 +0700",
-    "duration": 0.07993071,
+    "start_time": "2018-03-05 12:47:16 +0700",
+    "end_time": "2018-03-05 12:47:17 +0700",
+    "duration": 0.254385198,
     "checks_performed": [
       "BasicAuth",
       "BasicAuthTimingAttack",
