@@ -31,16 +31,36 @@
 
 en:
   hello: "Hello world"
+  users:
+    new:
+      title: "Sign up"
+      h1: "Sign up"
+      p: "This will be a signup page for new users."
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
+    header:
+      t1: "Sample app"
+      l1: "Home"
+      l2: "Help"
+      l3: "Log in"
+    footer:
+      l1: "About"
+      l2: "Contact"
+      l3: "News"
+      small1: "The"
+      small2: "Ruby on Rails Tutorial"
+      small3: "by "
+      small3: "Michael Hartl"
   static_pages:
     home:
       title: "Home"
-      h1: "Sample App"
+      h1: "Wellcome to Sample App"
       p: "This is the home page for the"
       a_link: "Ruby on Rails Tutorial" 
       p2: "sample application."
+      img: "Rails logo"
+      btn: "Sign up now!"
     help:
       title: "Help"
       h1: "Help"

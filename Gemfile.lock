@@ -53,7 +53,7 @@ GEM
     ast (2.4.0)
     astrolabe (1.3.1)
       parser (~> 2.2)
-    autoprefixer-rails (8.0.0)
+    autoprefixer-rails (8.1.0.1)
       execjs
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -64,6 +64,8 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    bootstrap-sass (3.3.0.0)
+      sass (~> 3.2)
     brakeman (4.2.0)
     builder (3.2.3)
     bundler-audit (0.6.0)
@@ -77,7 +79,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (>= 2.0, < 4.0)
-    childprocess (0.8.0)
+    childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     code_analyzer (0.4.8)
       sexp_processor
@@ -100,9 +102,8 @@ GEM
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
-    docile (1.1.5)
     equalizer (0.0.11)
-    erubi (1.7.0)
+    erubi (1.7.1)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.9.0)
@@ -169,7 +170,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     public_suffix (3.0.2)
-    puma (3.11.2)
+    puma (3.11.3)
     rack (2.0.4)
     rack-test (0.8.3)
       rack (>= 1.0, < 3)
@@ -191,13 +192,13 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_best_practices (1.19.0)
+    rails_best_practices (1.19.1)
       activesupport
       code_analyzer (>= 0.4.8)
       erubis
       i18n
       json
-      require_all
+      require_all (~> 1.5.0)
       ruby-progressbar
     railties (5.1.5)
       actionpack (= 5.1.5)
@@ -208,7 +209,7 @@ GEM
     rainbow (2.2.2)
       rake
     rake (12.3.0)
-    rb-fsevent (0.10.2)
+    rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     reek (4.7.3)
@@ -264,23 +265,11 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
     scss_lint_reporter_checkstyle (0.2.0)
-    selenium-webdriver (3.9.0)
+    selenium-webdriver (3.10.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
     sexp_processor (4.10.1)
     shellany (0.0.1)
-    shoulda-matchers (3.1.2)
-      activesupport (>= 4.0.0)
-    simplecov (0.15.1)
-      docile (~> 1.1.0)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.2)
-    simplecov-json (0.2)
-      json
-      simplecov
-    simplecov-rcov (0.2.3)
-      simplecov (>= 0.4.1)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -306,7 +295,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.6)
+    uglifier (4.1.7)
       execjs (>= 0.3.0, < 3)
     virtus (1.0.5)
       axiom-types (~> 0.1)
@@ -330,6 +319,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   better_errors
+  bootstrap-sass (= 3.3)
   brakeman
   bundler-audit
   byebug
@@ -355,10 +345,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   scss_lint_reporter_checkstyle
   selenium-webdriver
-  shoulda-matchers
-  simplecov
-  simplecov-json
-  simplecov-rcov
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
