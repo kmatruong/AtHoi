@@ -32,6 +32,9 @@
 en:
   hello: "Hello world"
   session_danger: "Invalid email/password combination"
+  plslogin: "Please log in."
+  success: "Profile updated"
+  delete: "User deleted"
   sessions:
     new:
       title: "Log in"
@@ -39,6 +42,7 @@ en:
       submit: "Log in"
       p: "New user?"
       link: "Sign up now!"
+      span: "Remember me on this computer"
   shared:
     error_messages:
       s1: "The form contains"
@@ -53,6 +57,19 @@ en:
       success: "Welcome to the Sample App!"
       error: "Can't find user"
       p1: "Sign up now!"
+      btn: "Create my account"
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      confirmation: "Confirmation"
+      submit: "Save changes"
+      btn1: "Save changes"
+    index:
+      title: "All users"
+      h1: "All users"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
