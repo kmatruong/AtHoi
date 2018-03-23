@@ -31,6 +31,14 @@
 
 en:
   hello: "Hello world"
+  session_danger: "Invalid email/password combination"
+  sessions:
+    new:
+      title: "Log in"
+      h1: "Log in"
+      submit: "Log in"
+      p: "New user?"
+      link: "Sign up now!"
   shared:
     error_messages:
       s1: "The form contains"
@@ -44,6 +52,7 @@ en:
       create_account: "Create my account"
       success: "Welcome to the Sample App!"
       error: "Can't find user"
+      p1: "Sign up now!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -52,6 +61,11 @@ en:
       l1: "Home"
       l2: "Help"
       l3: "Log in"
+      l4: "Users"
+      a: "Account"
+      l5: "Profile"
+      l6: "Settings"
+      l7: "Log out"
     footer:
       l1: "About"
       l2: "Contact"
