@@ -6,10 +6,16 @@
     <%= form_for :session, url: login_path do |f| %>
 
       <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control' %>
+      <%= f.email_field :email, class: "form-control" %>
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :remember_me,
+        class: "checkbox inline" do %>
+        <span><%= f.check_box :remember_me, class: "session-remember-me" %>
+          <%= t ".span" %></span>
+      <% end %>
 
       <%= f.submit t ".submit", class: "btn btn-primary" %>
     <% end %>

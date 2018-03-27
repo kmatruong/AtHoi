@@ -39,6 +39,7 @@ en:
       submit: "Log in"
       p: "New user?"
       link: "Sign up now!"
+      span: "Remember me on this computer"
   shared:
     error_messages:
       s1: "The form contains"
