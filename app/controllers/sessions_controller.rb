@@ -5,10 +5,13 @@ class SessionsController < ApplicationController
     user = User.find_by email: params_session[:email].downcase
 
     if user && user.authenticate(params_session[:password])
-      login_successfull user
+      if user.activated?
+        login_successfull user
+      else
+        no_activate
+      end
     else
-      flash.now[:danger] = t "session_danger"
-      render :new
+      log_failed
     end
   end
 
@@ -25,5 +28,17 @@ class SessionsController < ApplicationController
 
   def params_session
     params[:session]
+  end
+
+  private
+
+  def log_failed
+    flash.now[:danger] = t "session_danger"
+    render :new
+  end
+
+  def no_activate
+    flash[:warning] = t "message"
+    redirect_to root_url
   end
 end
