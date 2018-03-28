@@ -35,6 +35,15 @@ en:
   success: "Profile updated"
   plslogin: "Please log in."
   delete: "User deleted"
+  subj: "Account activation"
+  hi: "Hi"
+  pmail: "Welcome to the Sample App! Click on the link below to activate your account:"
+  finfo: "Please check your email to activate your account."
+  message: "Account not activated. "
+  chkactivate: "Check your email for the activation link."
+  fsuccess: "Account activated!"
+  fdanger: "Invalid activation link"
+  mail_reset: "to@example.org"
   sessions:
     new:
       title: "Log in"
@@ -71,6 +80,12 @@ en:
       h1: "All users"
     user:
       ysure: "You sure?"
+  user_mailer:
+    account_activation:
+      h1: "Sample App"
+      hi: "Hi"
+      p: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
