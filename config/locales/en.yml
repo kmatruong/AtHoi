@@ -53,6 +53,19 @@ en:
   noempty: "can't be empty"
   fsuccess_rs: "Password has been reset."
   fdanger_rs: "Password reset has expired."
+  mic_create: "Micropost created!"
+  mic_del: "Micropost deleted"
+  add_pic: "should be less than 5MB"
+  alert: "Maximum file size is 5MB. Please choose a smaller file."
+  microposts:
+    micropost:
+      timestamp1: "Posted"
+      timestamp2: "ago."
+      delete: "delete"
+      conf: "You sure?"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
   password_resets:
     new:
       title: "Forgot password"
@@ -74,6 +87,12 @@ en:
     error_messages:
       s1: "The form contains"
       error: "error"
+    user_info:
+      link_to: "View my profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
   users:
     new:
       title: "Sign up"
@@ -98,6 +117,8 @@ en:
       h1: "All users"
     user:
       ysure: "You sure?"
+    show:
+      h3: "Microposts"
   user_mailer:
     account_activation:
       h1: "Sample App"
@@ -140,6 +161,7 @@ en:
       p2: "sample application."
       img: "Rails logo"
       btn: "Sign up now!"
+      h3: "Micropost Feed"
     help:
       title: "Help"
       h1: "Help"
