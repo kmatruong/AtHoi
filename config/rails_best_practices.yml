@@ -39,7 +39,8 @@ RemoveUnusedMethodsInControllersCheck: {
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: {
   except_methods: [
-    User#digest
+    User#digest,
+    Micropost#order_desc
   ] }
 ReplaceComplexCreationWithFactoryMethodCheck: { attribute_assignment_count: 2 }
 ReplaceInstanceVariableWithLocalVariableCheck: { }
