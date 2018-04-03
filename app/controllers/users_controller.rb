@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if user.save
-      user.send_activation_email
+      UserMailer.account_activation(user).deliver_now
       flash[:info] = t "finfo"
       redirect_to root_url
     else
@@ -39,8 +39,22 @@ class UsersController < ApplicationController
     end
   end
 
+  def following
+    @title = t "following"
+    find_user
+    @users = user.following.paginate page: params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    find_user
+    @users = user.followers.paginate page: params[:page]
+    render "show_follow"
+  end
+
   def destroy
-    user.destroy
+    return unless user.destroy
     flash[:success] = t "delete"
     redirect_to users_url
   end

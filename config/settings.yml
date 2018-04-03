@@ -3,3 +3,5 @@ max_email: 255
 min_pass: 6
 max_content: 140
 size: 50
+sizeg: 30
+time: 2
