@@ -57,6 +57,8 @@ en:
   mic_del: "Micropost deleted"
   add_pic: "should be less than 5MB"
   alert: "Maximum file size is 5MB. Please choose a smaller file."
+  following: "Following"
+  followers: "Followers"
   microposts:
     micropost:
       timestamp1: "Posted"
@@ -119,6 +121,13 @@ en:
       ysure: "You sure?"
     show:
       h3: "Microposts"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      link: "View my profile"
+      b: "Microposts:"
   user_mailer:
     account_activation:
       h1: "Sample App"
